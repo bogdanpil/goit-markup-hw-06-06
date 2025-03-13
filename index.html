@@ -52,11 +52,35 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>Close</button>
+
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</address>
+          <div class="">
+            Social links
+            <ul>
+              <li>instagram</li>
+              <li>twitter</li>
+              <li>facebook</li>
+              <li>linkedin</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <!-- #region hero -->
-      <section class="hero">
+      <section class="hidden hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button">Order Service</button>
@@ -64,7 +88,7 @@
       </section>
       <!-- #endregion hero -->
       <!-- #region benefits -->
-      <section class="benefits">
+      <section class="hidden benefits">
         <div class="container benefits-container">
           <h2 class="visually-hidden">Benefits</h2>
           <ul class="benefits-list">
@@ -121,7 +145,7 @@
       </section>
       <!-- #endregion benefits -->
       <!-- #region our team -->
-      <section class="team">
+      <section class="hidden team">
         <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -295,7 +319,7 @@
       </section>
       <!-- #endregion our team -->
       <!-- #region portfolio -->
-      <section class="portfolio">
+      <section class="hidden portfolio">
         <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -425,7 +449,7 @@
       <!-- #endregion portfolio -->
     </main>
     <!-- #region footer -->
-    <footer class="page-footer">
+    <footer class="hidden page-footer">
       <div class="footer-container container">
         <div class="logo-container">
           <a class="logo footer-logo" href="./index.html"
@@ -486,7 +510,7 @@
     </footer>
     <!-- #endregion footer -->
 
-    <div class="backdrop is-open">
+    <div class="hidden backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="close-icon" width="8" height="8">
@@ -574,5 +598,8 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
