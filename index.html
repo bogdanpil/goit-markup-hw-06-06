@@ -62,17 +62,54 @@
 
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="header-menu-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-x"></use>
+            </svg>
+          </button>
 
-          <nav class="mobile-menu-nav">Navigation</nav>
-          <address>Address</address>
-          <div class="">
-            Social links
-            <ul>
-              <li>instagram</li>
-              <li>twitter</li>
-              <li>facebook</li>
-              <li>linkedin</li>
+          <nav class="mobile-menu-nav">
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a href="#" class="mob-menu-link">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="#" class="mob-menu-link">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="#" class="mob-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="mob-contacts-menu">
+              <li class="mob-contacts-menu-item">
+                <a href="tel:+110001111111" class="mob-contacts-menu-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-contacts-menu-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-contacts-menu-link"
+                  >info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+          <div class="mob-contacts-soc-con">
+            <ul class="mob-list-contacts">
+              <li class="mob-list-contacts-item">
+                <a class="mob-list-contacts-link" target="_blank" href="">
+                  <svg class="mob-icon" width="24" height="24"><use href="./images/icons.svg#icon-instagram"></use></svg></li>
+              <li class="mob-list-contacts-item">
+                <a class="mob-list-contacts-link" target="_blank" href="">
+                  <svg class="mob-icon" width="24" height="24"><use href="./images/icons.svg#icon-twitter"></use></svg></li>
+              <li class="mob-list-contacts-item">
+                <a class="mob-list-contacts-link" target="_blank" href="">
+                  <svg class="mob-icon" width="24" height="24"><use href="./images/icons.svg#icon-facebook"></use></svg></li>
+              <li class="mob-list-contacts-item">
+                <a class="mob-list-contacts-link" target="_blank" href="">
+                  <svg class="mob-icon" width="24" height="24"><use href="./images/icons.svg#icon-linkedin"></use></svg></li>
             </ul>
           </div>
         </div>
@@ -80,8 +117,8 @@
     </header>
     <main>
       <!-- #region hero -->
-      <section class="hidden hero">
-        <div class="container">
+      <section class="hero">
+        <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button">Order Service</button>
         </div>
